@@ -3,12 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Template • TodoMVC</title>
+		<title>Autobend  • Auckland</title>
 		<link rel="stylesheet" href="./css/base.css">
 		<link rel="stylesheet" href="./css/index.css">
 		<link rel="stylesheet" href="./css/app.css">
 	</head>
 	<body>
+
+		<div style="position: relative; width: 100%;"> <img id="logo" src="./img/autobend.png" alt="" ></div>
 		<section class="todoapp">
 
 		</section>
@@ -18,11 +20,10 @@
 		<!-- 底部 div 等价于 div class="footer" -->
 		<footer class="info">
 			<p>Double-click to edit a todo</p>
-			<!-- Remove the below line ↓ -->
-			<p>Template by <a href="javascript:;">Sindre Sorhus</a></p>
+
 			<!-- Change this out with your name and url ↓ -->
-			<p>Created by <a href="javascript:;">you</a></p>
-			<p>Part of <a href="javascript:;">TodoMVC</a></p>
+			<p>Created by <a href="javascript:;">cc</a></p>
+			<p>Part of <a href="javascript:;">Autobend</a></p>
 		</footer>
 		<script src="./lib/template-web.js"></script>
 
@@ -31,7 +32,7 @@
 		
 			<header class="header">
 				<!-- 标题 -->
-				<h1>todos</h1>
+				<h1>Bending schedule</h1>
 				<!-- 添加一条 todo 的文本框 -->
 				<input class="new-todo" placeholder="What needs to be done?" autofocus>
 			</header>
@@ -53,6 +54,17 @@
 							completed: 已完成
 							editing: 进入编辑状态
 					-->
+					<li> <div class="view"><label class="todo-item">
+						<table width="100%" border="0" cellspacing="1" cellpadding="4" bgcolor="#cccccc" class="tabtop13" align="center">
+							<tr>  <td>Job name</td>
+										<td>Process</td>
+										<td>Material</td>
+										<td>Mandrel</td>
+								</tr>
+							</table>
+						</label>
+					 </div>
+					</li>	
 					{{each bindlist v}}
 					<li class="{{v.isFinish && "completed"}} {{v.isEdit && 'editing'}}">
 						<div class="view">
